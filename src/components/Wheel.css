@@ -1,0 +1,69 @@
+.wheel-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 40px auto;
+  }
+  
+  .wheel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid gold;
+    background: conic-gradient(
+      purple 0deg 45deg,
+      gold 45deg 90deg,
+      purple 90deg 135deg,
+      gold 135deg 180deg,
+      purple 180deg 225deg,
+      gold 225deg 270deg,
+      purple 270deg 315deg,
+      gold 315deg 360deg
+    );
+  }
+  
+  .win-arrow {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%) rotate(180deg);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid purple;
+    z-index: 10;
+  }
+  
+  .wheel-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    text-align: center;
+    transform-origin: 0 0;
+    font-size: 12px;
+    color: white;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  button:disabled {
+    background-color: #c9c9c9;
+    cursor: not-allowed;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
